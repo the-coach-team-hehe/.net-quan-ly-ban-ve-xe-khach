@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\Coach Ticket Management\Coach Ticket Management\bin\Debug\Coach Ticket Management.exe.config
+C:\Users\Admin\source\repos\Coach Ticket Management\Coach Ticket Management\bin\Debug\Coach Ticket Management.exe
+C:\Users\Admin\source\repos\Coach Ticket Management\Coach Ticket Management\bin\Debug\Coach Ticket Management.pdb
+C:\Users\Admin\source\repos\Coach Ticket Management\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Coach Ticket Management\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\Coach Ticket Management\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Properties.Resources.resources
+C:\Users\Admin\source\repos\Coach Ticket Management\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Coach Ticket Management\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Coach Ticket Management\Coach Ticket Management\obj\Debug\Coach Ticket Management.exe
+C:\Users\Admin\source\repos\Coach Ticket Management\Coach Ticket Management\obj\Debug\Coach Ticket Management.pdb

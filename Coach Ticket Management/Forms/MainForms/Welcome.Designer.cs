@@ -1,6 +1,6 @@
-﻿namespace Coach_Ticket_Management
+﻿namespace Coach_Ticket_Management.Forms.MainForms
 {
-    partial class Form1
+    partial class Welcome
     {
         /// <summary>
         /// Required designer variable.
@@ -31,10 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Text = "Welcome";
         }
 
         #endregion
     }
 }
-
