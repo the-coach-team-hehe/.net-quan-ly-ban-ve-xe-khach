@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Coach_Ticket_Management.Forms.Actions.Login;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,9 @@ namespace Coach_Ticket_Management.Forms.MainForms
         public Welcome()
         {
             InitializeComponent();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
         }
+
     }
 }
