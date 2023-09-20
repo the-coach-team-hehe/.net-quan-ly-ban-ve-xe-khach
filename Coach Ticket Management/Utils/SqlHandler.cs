@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace Coach_Ticket_Management.Utils
 {
-    internal class SqlHandler
+    public class SqlHandler
     {
 
     }

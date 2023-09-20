@@ -8,3 +8,15 @@ C:\Users\Admin\source\repos\Coach Ticket Management\Coach Ticket Management\obj\
 C:\Users\Admin\source\repos\Coach Ticket Management\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\Coach Ticket Management\Coach Ticket Management\obj\Debug\Coach Ticket Management.exe
 C:\Users\Admin\source\repos\Coach Ticket Management\Coach Ticket Management\obj\Debug\Coach Ticket Management.pdb
+C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.AssemblyReference.cache
+C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.SuggestedBindingRedirects.cache
+C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.BaseForms.BaseForm.resources
+C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Properties.Resources.resources
+C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.GenerateResource.cache
+C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.CoreCompileInputs.cache
+C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\bin\Debug\Coach Ticket Management.exe.config
+C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\bin\Debug\Coach Ticket Management.exe
+C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\bin\Debug\Coach Ticket Management.pdb
+C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach Ticket Management.exe
+C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach Ticket Management.pdb
+C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.ActionForms.LoginForm.resources

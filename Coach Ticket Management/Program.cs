@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Coach_Ticket_Management.Forms.MainForms;
+using Coach_Ticket_Management.Forms.ActionForms;
 
 namespace Coach_Ticket_Management
 {
@@ -17,7 +17,7 @@ namespace Coach_Ticket_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Welcome());
+            Application.Run(new LoginForm());
         }
     }
 }

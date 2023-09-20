@@ -1,18 +1,17 @@
-﻿using System;
+﻿using Coach_Ticket_Management.Forms.BaseForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Coach_Ticket_Management.Forms.Actions.Login
+namespace Coach_Ticket_Management.Forms.MainForms
 {
-    public partial class LoginForm : Form
+    public partial class MainForm : BaseForm
     {
-        public LoginForm()
+        public MainForm()
         {
             InitializeComponent();
         }
