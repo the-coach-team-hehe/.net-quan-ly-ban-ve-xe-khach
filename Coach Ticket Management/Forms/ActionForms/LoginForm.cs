@@ -17,6 +17,13 @@ namespace Coach_Ticket_Management.Forms.ActionForms
         {
             InitializeComponent();
             Text = "Đăng nhập";
+
+            this.btn_login.Click += Btn_login_Click;
+        }
+
+        private void Btn_login_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
