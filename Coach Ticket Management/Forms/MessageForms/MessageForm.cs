@@ -18,9 +18,10 @@ namespace Coach_Ticket_Management.Forms.BaseForms
             InitializeComponent();
         }
 
-        public void SetText(string text)
+        public MessageForm(string message, string title)
         {
-
+            InitializeComponent();
+            this.Text = title;
         }
     }
 }

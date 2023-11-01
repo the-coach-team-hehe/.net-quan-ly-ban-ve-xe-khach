@@ -20,3 +20,4 @@ C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\bin\Debug\Coa
 C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach Ticket Management.exe
 C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach Ticket Management.pdb
 C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.ActionForms.LoginForm.resources
+C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.BaseForms.MessageForm.resources
