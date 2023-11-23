@@ -63,6 +63,12 @@
     <Compile Include="Forms\ActionForms\QLNhanVien.Designer.cs">
       <DependentUpon>QLNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ActionForms\QLVeXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ActionForms\QLVeXe.Designer.cs">
+      <DependentUpon>QLVeXe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BaseForms\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
