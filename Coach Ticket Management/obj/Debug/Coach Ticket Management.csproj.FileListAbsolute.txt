@@ -21,3 +21,14 @@ C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coa
 C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach Ticket Management.pdb
 C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.ActionForms.LoginForm.resources
 C:\Stuff\Codespace\coach_ticket_management\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.BaseForms.MessageForm.resources
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.AssemblyReference.cache
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.SuggestedBindingRedirects.cache
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.ActionForms.LoginForm.resources
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.ActionForms.QLNhanVien.resources
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.BaseForms.BaseForm.resources
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.BaseForms.MessageForm.resources
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Properties.Resources.resources
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.GenerateResource.cache
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.CoreCompileInputs.cache
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.exe
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.pdb
