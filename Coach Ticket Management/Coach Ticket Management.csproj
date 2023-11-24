@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\QLBVXK.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBVXK.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ActionForms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +87,7 @@
     <Compile Include="Forms\MainForms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\CurrentUser.cs" />
     <Compile Include="Models\SqlHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,6 +113,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Database\QLBVXK.xsc">
+      <DependentUpon>QLBVXK.xsd</DependentUpon>
+    </None>
+    <None Include="Database\QLBVXK.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLBVXK.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Database\QLBVXK.xss">
+      <DependentUpon>QLBVXK.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -122,7 +139,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
-    <Folder Include="SQLScripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\QLBVXK.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
