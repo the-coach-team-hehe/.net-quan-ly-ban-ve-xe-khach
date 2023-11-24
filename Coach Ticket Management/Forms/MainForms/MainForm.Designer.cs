@@ -34,6 +34,7 @@
             this.quảnLýXeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýTuyếnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýTàiXếToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thôngTinCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +46,8 @@
             this.quảnLýChuyếnXeToolStripMenuItem,
             this.quảnLýXeToolStripMenuItem,
             this.quảnLýTuyếnToolStripMenuItem,
-            this.quảnLýTàiXếToolStripMenuItem});
+            this.quảnLýTàiXếToolStripMenuItem,
+            this.thôngTinCáNhânToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1328, 28);
@@ -82,6 +84,12 @@
             this.quảnLýTàiXếToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
             this.quảnLýTàiXếToolStripMenuItem.Text = "Quản lý tài xế";
             // 
+            // thôngTinCáNhânToolStripMenuItem
+            // 
+            this.thôngTinCáNhânToolStripMenuItem.Name = "thôngTinCáNhânToolStripMenuItem";
+            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
+            this.thôngTinCáNhânToolStripMenuItem.Text = "Thông tin cá nhân";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -89,6 +97,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
+            this.Text = "QUẢN LÝ BÁN VÉ XE KHÁCH - CTMA";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -104,5 +113,6 @@
         private System.Windows.Forms.ToolStripMenuItem quảnLýXeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quảnLýTuyếnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quảnLýTàiXếToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thôngTinCáNhânToolStripMenuItem;
     }
 }
