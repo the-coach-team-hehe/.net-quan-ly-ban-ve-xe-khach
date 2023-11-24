@@ -33,5 +33,16 @@ namespace Coach_Ticket_Management.Properties {
                 return ((string)(this["QLBVXKConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=VUTHANHDUONG\\D_DB_2012;Initial Catalog=DB_QLBVXK;Integrated Security=" +
+            "True")]
+        public string DB_QLBVXKConnectionString {
+            get {
+                return ((string)(this["DB_QLBVXKConnectionString"]));
+            }
+        }
     }
 }
