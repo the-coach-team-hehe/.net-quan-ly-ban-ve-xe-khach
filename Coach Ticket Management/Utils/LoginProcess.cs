@@ -19,6 +19,9 @@ namespace Coach_Ticket_Management.Utils
 
         public static LoginStatus Process(string username, string password)
         {
+            NhanVienTableAdapter adapter = new NhanVienTableAdapter();
+            DataTable dt = new DataTable();
+            dt = adapter.GetData()
             return LoginStatus.Successful;
         }
     }
