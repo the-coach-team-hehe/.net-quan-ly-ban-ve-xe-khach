@@ -1,4 +1,5 @@
 ﻿using Coach_Ticket_Management.Forms.BaseForms;
+using Coach_Ticket_Management.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,18 @@ namespace Coach_Ticket_Management.Forms.MainForms
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            RoleAssignment();
+        }
+
+        private void RoleAssignment()
+        {
+            Role role = CurrentUser.Role;
+            if (role == Role.Employee)
+                quảnLýNhânViênToolStripMenuItem.Enabled = quảnLýNhânViênToolStripMenuItem.Visible = false;
         }
     }
 }
