@@ -46,11 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database\QLBVXK.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLBVXK.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Forms\ActionForms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,17 +107,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Database\QLBVXK.xsc">
-      <DependentUpon>QLBVXK.xsd</DependentUpon>
-    </None>
-    <None Include="Database\QLBVXK.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QLBVXK.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Database\QLBVXK.xss">
-      <DependentUpon>QLBVXK.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
