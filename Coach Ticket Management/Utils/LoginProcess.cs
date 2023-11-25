@@ -32,7 +32,7 @@ namespace Coach_Ticket_Management.Utils
             else
             {
                 return LoginStatus.Failed;
-            }    
+            }
         }
     }
 }

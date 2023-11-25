@@ -1,5 +1,6 @@
 ﻿using Coach_Ticket_Management.Forms.BaseForms;
 using Coach_Ticket_Management.Models;
+using Coach_Ticket_Management.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,12 @@ namespace Coach_Ticket_Management.Forms.MainForms
         private void MainForm_Load(object sender, EventArgs e)
         {
             RoleAssignment();
+            dataGridView1.DataSource = DataAdapterHandler.GetDataTableVeXes();
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AllowUserToResizeColumns = false;
+            dataGridView1.EditMode = DataGridViewEditMode.EditProgrammatically;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         private void RoleAssignment()
