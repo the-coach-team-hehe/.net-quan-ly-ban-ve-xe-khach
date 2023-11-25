@@ -8999,12 +8999,20 @@ SELECT MaNhanVien, MaChucVu, TenDangNhap, MatKhau, TenNhanVien, CCCD, SoDienThoa
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT MaNhanVien, MaChucVu, TenDangNhap, MatKhau, TenNhanVien, CCCD, SoDienThoai" +
                 ", DiaChi FROM dbo.NhanVien";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT MaNhanVien, MaChucVu, TenDangNhap, MatKhau, TenNhanVien, CCCD, SoDienThoai" +
+                ", DiaChi FROM dbo.NhanVien WHERE TenDangNhap = @TenDangNhap AND MatKhau = @MatKh" +
+                "au";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TenDangNhap", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "TenDangNhap", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MatKhau", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "MatKhau", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9026,6 +9034,29 @@ SELECT MaNhanVien, MaChucVu, TenDangNhap, MatKhau, TenNhanVien, CCCD, SoDienThoa
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual QLBVXK.NhanVienDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            QLBVXK.NhanVienDataTable dataTable = new QLBVXK.NhanVienDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual QLBVXK.NhanVienDataTable GetDataByTenDangNhapMatKhau(string TenDangNhap, string MatKhau) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((TenDangNhap == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(TenDangNhap));
+            }
+            if ((MatKhau == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(MatKhau));
+            }
             QLBVXK.NhanVienDataTable dataTable = new QLBVXK.NhanVienDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
