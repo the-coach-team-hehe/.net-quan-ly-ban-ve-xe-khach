@@ -44,5 +44,16 @@ namespace Coach_Ticket_Management.Properties {
                 return ((string)(this["DB_QLBVXKConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DB_QLBVXK_Pri" +
+            "m.mdf;Integrated Security=True;Connect Timeout=30")]
+        public string DB_QLBVXK_PrimConnectionString {
+            get {
+                return ((string)(this["DB_QLBVXK_PrimConnectionString"]));
+            }
+        }
     }
 }
