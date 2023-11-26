@@ -17,7 +17,7 @@
     <Shape ID="DesignTable:TaiXe" ZOrder="7" X="2147" Y="248" Height="227" Width="205" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="168" />
     <Shape ID="DesignTable:Tuyen" ZOrder="3" X="1697" Y="380" Height="227" Width="209" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="168" />
     <Shape ID="DesignTable:VeXe" ZOrder="1" X="673" Y="125" Height="296" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="191" />
-    <Shape ID="DesignTable:ThongTinVeXe" ZOrder="5" X="1024" Y="545" Height="113" Width="248" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="54" />
+    <Shape ID="DesignTable:ThongTinVeXe" ZOrder="5" X="1024" Y="545" Height="112" Width="272" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="54" />
     <Shape ID="DesignTable:ThongTinChuyenXe" ZOrder="2" X="1383" Y="598" Height="112" Width="248" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="54" />
   </Shapes>
   <Connectors>

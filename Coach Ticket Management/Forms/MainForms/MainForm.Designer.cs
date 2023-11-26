@@ -117,6 +117,7 @@
             this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
             this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(160, 24);
             this.quảnLýNhânViênToolStripMenuItem.Text = "Quản lý nhân viên";
+            this.quảnLýNhânViênToolStripMenuItem.Click += new System.EventHandler(this.quảnLýNhânViênToolStripMenuItem_Click);
             // 
             // quảnLýChuyếnXeToolStripMenuItem
             // 
@@ -587,6 +588,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Location = new System.Drawing.Point(0, 0);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "QUẢN LÝ BÁN VÉ XE KHÁCH - CTMA";

@@ -11691,7 +11691,7 @@ SELECT MaVeXe, MaChuyenXe, MaLoaiVe, MaNhanVien, SoGhe, TenKhachHang, GiaVe FROM
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Coach_Ticket_Management.Properties.Settings.Default.DB_QLBVXK_PrimConnectionString;
+            this._connection.ConnectionString = global::Coach_Ticket_Management.Properties.Settings.Default.DB_QLBVXK_PrimConnectionString_Dev;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11701,21 +11701,8 @@ SELECT MaVeXe, MaChuyenXe, MaLoaiVe, MaNhanVien, SoGhe, TenKhachHang, GiaVe FROM
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT vx.MaVeXe N'Mã vé', vx.MaChuyenXe N'Mã chuyến', t.TenTuyen N'Tuyến', lv.TenLoaiVe N'Loại vé', nv.TenNhanVien N'Nhân viên bán', vx.SoGhe N'Số ghế', vx.TenKhachHang N'Họ tên', vx.GiaVe N'Giá vé', cx.ThoiGianKhoiHanh N'Ngày khởi hành' FROM dbo.VeXe vx
-join dbo.ChuyenXe cx on vx.MaChuyenXe = cx.MaChuyenXe join dbo.Tuyen t on cx.MaTuyen = t.MaTuyen join dbo.LoaiVe lv on vx.MaLoaiVe = lv.MaLoaiVe join dbo.NhanVien nv on nv.MaNhanVien = vx.MaNhanVien";
+join dbo.ChuyenXe cx on vx.MaChuyenXe = cx.MaChuyenXe join dbo.Tuyen t on cx.MaTuyen = t.MaTuyen join dbo.LoaiVe lv on vx.MaLoaiVe = lv.MaLoaiVe left join dbo.NhanVien nv on nv.MaNhanVien = vx.MaNhanVien";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLBVXK.ThongTinVeXeDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

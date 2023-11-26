@@ -17,6 +17,7 @@ namespace Coach_Ticket_Management.Forms.ActionForms
         string _maChuyen = string.Empty;
         string _tenTuyen = string.Empty;
         string _thoiGianKhoiHanh = string.Empty;
+        DataTable dt = DataAdapterHandler.GetDataTableThongTinChuyenXes();
         public PickChuyen(string MaChuyen, string TenTuyen)
         {
             InitializeComponent();
@@ -32,7 +33,8 @@ namespace Coach_Ticket_Management.Forms.ActionForms
 
         private void PickChuyen_Load(object sender, EventArgs e)
         {
-            dataGridView_thongtinchuyen.DataSource = DataAdapterHandler.GetDataTableThongTinChuyenXes();
+            this.CenterToScreen();
+            dataGridView_thongtinchuyen.DataSource = dt;
             dataGridView_thongtinchuyen.AllowUserToAddRows = false;
             dataGridView_thongtinchuyen.AllowUserToDeleteRows = false;
             dataGridView_thongtinchuyen.AllowUserToResizeColumns = false;
@@ -63,7 +65,21 @@ namespace Coach_Ticket_Management.Forms.ActionForms
 
         private void btn_timkiem_Click(object sender, EventArgs e)
         {
-
+            bool isHavePrev = false;
+            string filter = string.Empty;
+            if (cbbox_tuyen.Text != string.Empty)
+            {
+                filter += string.Format("([Tuyến] LIKE '%{0}%')", cbbox_tuyen.Text);
+                isHavePrev = true;
+            }
+            if (dtpicker_ngaykhoihanh.Value != null)
+            {
+                string date = dtpicker_ngaykhoihanh.Value.ToString("dd/MM/yyyy");
+                if (isHavePrev)
+                    filter += " AND ";
+                filter += string.Format("(CONVERT([Thời gian khởi hành], System.String) LIKE '%{0}%')", date);
+            }
+            dt.DefaultView.RowFilter = filter;
         }
 
         private void btn_chon_Click(object sender, EventArgs e)

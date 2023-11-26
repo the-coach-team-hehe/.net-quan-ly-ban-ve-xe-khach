@@ -2,9 +2,10 @@
 <xs:schema id="QLBVXK" targetNamespace="http://tempuri.org/QLBVXK.xsd" xmlns:mstns="http://tempuri.org/QLBVXK.xsd" xmlns="http://tempuri.org/QLBVXK.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DB_QLBVXK_PrimConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_QLBVXK_PrimConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Coach_Ticket_Management.Properties.Settings.GlobalReference.Default.DB_QLBVXK_PrimConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DB_QLBVXK_PrimConnectionString_Dev" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_QLBVXK_PrimConnectionString_Dev (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Coach_Ticket_Management.Properties.Settings.GlobalReference.Default.DB_QLBVXK_PrimConnectionString_Dev" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ChucVuTableAdapter" GeneratorDataComponentClassName="ChucVuTableAdapter" Name="ChucVu" UserDataComponentName="ChucVuTableAdapter">
@@ -817,11 +818,11 @@ where MaVeXe = @MaVeXe</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ThongTinVeXeTableAdapter" GeneratorDataComponentClassName="ThongTinVeXeTableAdapter" Name="ThongTinVeXe" UserDataComponentName="ThongTinVeXeTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DB_QLBVXK_PrimConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DB_QLBVXK_PrimConnectionString_Dev (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT vx.MaVeXe N'Mã vé', vx.MaChuyenXe N'Mã chuyến', t.TenTuyen N'Tuyến', lv.TenLoaiVe N'Loại vé', nv.TenNhanVien N'Nhân viên bán', vx.SoGhe N'Số ghế', vx.TenKhachHang N'Họ tên', vx.GiaVe N'Giá vé', cx.ThoiGianKhoiHanh N'Ngày khởi hành' FROM dbo.VeXe vx
-join dbo.ChuyenXe cx on vx.MaChuyenXe = cx.MaChuyenXe join dbo.Tuyen t on cx.MaTuyen = t.MaTuyen join dbo.LoaiVe lv on vx.MaLoaiVe = lv.MaLoaiVe join dbo.NhanVien nv on nv.MaNhanVien = vx.MaNhanVien</CommandText>
+join dbo.ChuyenXe cx on vx.MaChuyenXe = cx.MaChuyenXe join dbo.Tuyen t on cx.MaTuyen = t.MaTuyen join dbo.LoaiVe lv on vx.MaLoaiVe = lv.MaLoaiVe left join dbo.NhanVien nv on nv.MaNhanVien = vx.MaNhanVien</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>

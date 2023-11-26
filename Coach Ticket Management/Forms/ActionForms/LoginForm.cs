@@ -21,6 +21,7 @@ namespace Coach_Ticket_Management.Forms.ActionForms
         {
             InitializeComponent();
             this.Load += LoginForm_Load;
+            this.CenterToScreen();
         }
 
         private void LoginForm_Load(object sender, EventArgs e)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Coach_Ticket_Management.Forms.BaseForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,12 @@ using System.Windows.Forms;
 
 namespace Coach_Ticket_Management.Forms.ActionForms
 {
-    public partial class QLNhanVien : Form
+    public partial class QLNhanVien : BaseForm
     {
         public QLNhanVien()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
     }
 }

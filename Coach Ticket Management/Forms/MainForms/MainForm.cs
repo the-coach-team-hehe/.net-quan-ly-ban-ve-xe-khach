@@ -22,6 +22,7 @@ namespace Coach_Ticket_Management.Forms.MainForms
         public MainForm()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -238,6 +239,12 @@ namespace Coach_Ticket_Management.Forms.MainForms
             ControlHandler.SetEnabled(false, tb2_tenkhachhang, btn_toPickChuyen, cbbox2_loaive, cbbox2_soghe, btn_luu, btn_huy);
             ControlHandler.SetEnabled(true, btn_them, btn_xoa, dataGridView_thongtinvexe);
             previousActionButton = null;
+        }
+
+        private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QLNhanVien qLNhanVien = new QLNhanVien();
+            qLNhanVien.ShowDialog();
         }
     }
 }
