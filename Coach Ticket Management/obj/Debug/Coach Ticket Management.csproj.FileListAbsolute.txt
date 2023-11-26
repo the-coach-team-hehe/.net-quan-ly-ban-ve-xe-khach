@@ -39,3 +39,4 @@ C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debu
 C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.MainForms.MainForm.resources
 C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\DB_QLBVXK_Prim.mdf
 C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\DB_QLBVXK_Prim_log.ldf
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.ActionForms.PickChuyen.resources
