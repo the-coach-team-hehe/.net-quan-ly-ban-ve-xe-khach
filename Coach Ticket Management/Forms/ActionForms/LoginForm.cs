@@ -6,7 +6,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,7 +20,6 @@ namespace Coach_Ticket_Management.Forms.ActionForms
         public LoginForm()
         {
             InitializeComponent();
-            
             this.Load += LoginForm_Load;
         }
 

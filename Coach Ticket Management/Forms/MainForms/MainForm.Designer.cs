@@ -35,9 +35,11 @@
             this.quảnLýXeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýTuyếnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýTàiXếToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.báoCáoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView_thongtinvexe = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_showall = new System.Windows.Forms.Button();
             this.btn_timkiem = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.dtpicker_ngaykhoihanh = new System.Windows.Forms.DateTimePicker();
@@ -70,14 +72,15 @@
             this.tb2_mave = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btn_huy = new System.Windows.Forms.Button();
             this.btn_luu = new System.Windows.Forms.Button();
             this.btn_sua = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.loaiVeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.veXeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLBVXKBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLBVXK = new Coach_Ticket_Management.Database.QLBVXK();
+            this.veXeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.loaiVeTableAdapter = new Coach_Ticket_Management.Database.QLBVXKTableAdapters.LoaiVeTableAdapter();
             this.veXeTableAdapter = new Coach_Ticket_Management.Database.QLBVXKTableAdapters.VeXeTableAdapter();
             this.menuStrip1.SuspendLayout();
@@ -86,9 +89,9 @@
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loaiVeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veXeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLBVXKBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLBVXK)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veXeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -100,10 +103,11 @@
             this.quảnLýXeToolStripMenuItem,
             this.quảnLýTuyếnToolStripMenuItem,
             this.quảnLýTàiXếToolStripMenuItem,
+            this.báoCáoToolStripMenuItem,
             this.thôngTinCáNhânToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1328, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1328, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -111,42 +115,49 @@
             // 
             this.quảnLýNhânViênToolStripMenuItem.Image = global::Coach_Ticket_Management.Properties.Resources.user;
             this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
-            this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
+            this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(160, 24);
             this.quảnLýNhânViênToolStripMenuItem.Text = "Quản lý nhân viên";
             // 
             // quảnLýChuyếnXeToolStripMenuItem
             // 
             this.quảnLýChuyếnXeToolStripMenuItem.Image = global::Coach_Ticket_Management.Properties.Resources.coaches;
             this.quảnLýChuyếnXeToolStripMenuItem.Name = "quảnLýChuyếnXeToolStripMenuItem";
-            this.quảnLýChuyếnXeToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
+            this.quảnLýChuyếnXeToolStripMenuItem.Size = new System.Drawing.Size(162, 24);
             this.quảnLýChuyếnXeToolStripMenuItem.Text = "Quản lý chuyến xe";
             // 
             // quảnLýXeToolStripMenuItem
             // 
             this.quảnLýXeToolStripMenuItem.Image = global::Coach_Ticket_Management.Properties.Resources.coach;
             this.quảnLýXeToolStripMenuItem.Name = "quảnLýXeToolStripMenuItem";
-            this.quảnLýXeToolStripMenuItem.Size = new System.Drawing.Size(112, 26);
+            this.quảnLýXeToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
             this.quảnLýXeToolStripMenuItem.Text = "Quản lý xe";
             // 
             // quảnLýTuyếnToolStripMenuItem
             // 
             this.quảnLýTuyếnToolStripMenuItem.Image = global::Coach_Ticket_Management.Properties.Resources.route;
             this.quảnLýTuyếnToolStripMenuItem.Name = "quảnLýTuyếnToolStripMenuItem";
-            this.quảnLýTuyếnToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
+            this.quảnLýTuyếnToolStripMenuItem.Size = new System.Drawing.Size(133, 24);
             this.quảnLýTuyếnToolStripMenuItem.Text = "Quản lý tuyến";
             // 
             // quảnLýTàiXếToolStripMenuItem
             // 
             this.quảnLýTàiXếToolStripMenuItem.Image = global::Coach_Ticket_Management.Properties.Resources.driver;
             this.quảnLýTàiXếToolStripMenuItem.Name = "quảnLýTàiXếToolStripMenuItem";
-            this.quảnLýTàiXếToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
+            this.quảnLýTàiXếToolStripMenuItem.Size = new System.Drawing.Size(133, 24);
             this.quảnLýTàiXếToolStripMenuItem.Text = "Quản lý tài xế";
+            // 
+            // báoCáoToolStripMenuItem
+            // 
+            this.báoCáoToolStripMenuItem.Image = global::Coach_Ticket_Management.Properties.Resources.report__1_;
+            this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
+            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
+            this.báoCáoToolStripMenuItem.Text = "Báo cáo";
             // 
             // thôngTinCáNhânToolStripMenuItem
             // 
             this.thôngTinCáNhânToolStripMenuItem.Image = global::Coach_Ticket_Management.Properties.Resources.settings;
             this.thôngTinCáNhânToolStripMenuItem.Name = "thôngTinCáNhânToolStripMenuItem";
-            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(90, 26);
+            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
             this.thôngTinCáNhânToolStripMenuItem.Text = "Cài đặt";
             // 
             // dataGridView_thongtinvexe
@@ -156,11 +167,12 @@
             this.dataGridView_thongtinvexe.Name = "dataGridView_thongtinvexe";
             this.dataGridView_thongtinvexe.RowHeadersWidth = 51;
             this.dataGridView_thongtinvexe.RowTemplate.Height = 24;
-            this.dataGridView_thongtinvexe.Size = new System.Drawing.Size(970, 537);
+            this.dataGridView_thongtinvexe.Size = new System.Drawing.Size(944, 537);
             this.dataGridView_thongtinvexe.TabIndex = 1;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_showall);
             this.groupBox1.Controls.Add(this.btn_timkiem);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.dtpicker_ngaykhoihanh);
@@ -175,16 +187,26 @@
             this.groupBox1.Controls.Add(this.dataGridView_thongtinvexe);
             this.groupBox1.Location = new System.Drawing.Point(12, 31);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(983, 656);
+            this.groupBox1.Size = new System.Drawing.Size(960, 656);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách";
             // 
+            // btn_showall
+            // 
+            this.btn_showall.Location = new System.Drawing.Point(831, 62);
+            this.btn_showall.Name = "btn_showall";
+            this.btn_showall.Size = new System.Drawing.Size(119, 25);
+            this.btn_showall.TabIndex = 16;
+            this.btn_showall.Text = "Hiển thị tất cả";
+            this.btn_showall.UseVisualStyleBackColor = true;
+            this.btn_showall.Click += new System.EventHandler(this.btn_showall_Click);
+            // 
             // btn_timkiem
             // 
-            this.btn_timkiem.Location = new System.Drawing.Point(756, 63);
+            this.btn_timkiem.Location = new System.Drawing.Point(708, 61);
             this.btn_timkiem.Name = "btn_timkiem";
-            this.btn_timkiem.Size = new System.Drawing.Size(135, 23);
+            this.btn_timkiem.Size = new System.Drawing.Size(117, 25);
             this.btn_timkiem.TabIndex = 15;
             this.btn_timkiem.Text = "Tìm kiếm";
             this.btn_timkiem.UseVisualStyleBackColor = true;
@@ -203,7 +225,7 @@
             // 
             this.dtpicker_ngaykhoihanh.Location = new System.Drawing.Point(777, 26);
             this.dtpicker_ngaykhoihanh.Name = "dtpicker_ngaykhoihanh";
-            this.dtpicker_ngaykhoihanh.Size = new System.Drawing.Size(189, 22);
+            this.dtpicker_ngaykhoihanh.Size = new System.Drawing.Size(173, 22);
             this.dtpicker_ngaykhoihanh.TabIndex = 13;
             // 
             // tb_machuyen
@@ -292,9 +314,9 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.tb2_mave);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Location = new System.Drawing.Point(1001, 148);
+            this.groupBox2.Location = new System.Drawing.Point(978, 194);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(315, 539);
+            this.groupBox2.Size = new System.Drawing.Size(338, 493);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin";
@@ -304,14 +326,14 @@
             this.cbbox2_soghe.FormattingEnabled = true;
             this.cbbox2_soghe.Location = new System.Drawing.Point(134, 214);
             this.cbbox2_soghe.Name = "cbbox2_soghe";
-            this.cbbox2_soghe.Size = new System.Drawing.Size(166, 24);
+            this.cbbox2_soghe.Size = new System.Drawing.Size(198, 24);
             this.cbbox2_soghe.TabIndex = 27;
             // 
             // tb2_tuyen
             // 
             this.tb2_tuyen.Location = new System.Drawing.Point(134, 105);
             this.tb2_tuyen.Name = "tb2_tuyen";
-            this.tb2_tuyen.Size = new System.Drawing.Size(166, 22);
+            this.tb2_tuyen.Size = new System.Drawing.Size(198, 22);
             this.tb2_tuyen.TabIndex = 26;
             // 
             // label13
@@ -327,7 +349,7 @@
             // 
             this.tb2_ngaykhoihanh.Location = new System.Drawing.Point(134, 133);
             this.tb2_ngaykhoihanh.Name = "tb2_ngaykhoihanh";
-            this.tb2_ngaykhoihanh.Size = new System.Drawing.Size(166, 22);
+            this.tb2_ngaykhoihanh.Size = new System.Drawing.Size(198, 22);
             this.tb2_ngaykhoihanh.TabIndex = 24;
             // 
             // label12
@@ -344,12 +366,12 @@
             this.cbbox2_loaive.FormattingEnabled = true;
             this.cbbox2_loaive.Location = new System.Drawing.Point(134, 186);
             this.cbbox2_loaive.Name = "cbbox2_loaive";
-            this.cbbox2_loaive.Size = new System.Drawing.Size(166, 24);
+            this.cbbox2_loaive.Size = new System.Drawing.Size(198, 24);
             this.cbbox2_loaive.TabIndex = 21;
             // 
             // btn_toPickChuyen
             // 
-            this.btn_toPickChuyen.Location = new System.Drawing.Point(211, 159);
+            this.btn_toPickChuyen.Location = new System.Drawing.Point(243, 159);
             this.btn_toPickChuyen.Name = "btn_toPickChuyen";
             this.btn_toPickChuyen.Size = new System.Drawing.Size(89, 23);
             this.btn_toPickChuyen.TabIndex = 20;
@@ -361,7 +383,7 @@
             // 
             this.tb2_giave.Location = new System.Drawing.Point(134, 244);
             this.tb2_giave.Name = "tb2_giave";
-            this.tb2_giave.Size = new System.Drawing.Size(166, 22);
+            this.tb2_giave.Size = new System.Drawing.Size(198, 22);
             this.tb2_giave.TabIndex = 19;
             // 
             // label15
@@ -395,7 +417,7 @@
             // 
             this.tb2_machuyen.Location = new System.Drawing.Point(134, 160);
             this.tb2_machuyen.Name = "tb2_machuyen";
-            this.tb2_machuyen.Size = new System.Drawing.Size(71, 22);
+            this.tb2_machuyen.Size = new System.Drawing.Size(103, 22);
             this.tb2_machuyen.TabIndex = 7;
             // 
             // label9
@@ -411,7 +433,7 @@
             // 
             this.tb2_nhanvienbanve.Location = new System.Drawing.Point(134, 77);
             this.tb2_nhanvienbanve.Name = "tb2_nhanvienbanve";
-            this.tb2_nhanvienbanve.Size = new System.Drawing.Size(166, 22);
+            this.tb2_nhanvienbanve.Size = new System.Drawing.Size(198, 22);
             this.tb2_nhanvienbanve.TabIndex = 5;
             // 
             // label8
@@ -427,7 +449,7 @@
             // 
             this.tb2_tenkhachhang.Location = new System.Drawing.Point(134, 49);
             this.tb2_tenkhachhang.Name = "tb2_tenkhachhang";
-            this.tb2_tenkhachhang.Size = new System.Drawing.Size(166, 22);
+            this.tb2_tenkhachhang.Size = new System.Drawing.Size(198, 22);
             this.tb2_tenkhachhang.TabIndex = 3;
             // 
             // label7
@@ -443,7 +465,7 @@
             // 
             this.tb2_mave.Location = new System.Drawing.Point(134, 21);
             this.tb2_mave.Name = "tb2_mave";
-            this.tb2_mave.Size = new System.Drawing.Size(166, 22);
+            this.tb2_mave.Size = new System.Drawing.Size(198, 22);
             this.tb2_mave.TabIndex = 1;
             // 
             // label6
@@ -457,16 +479,29 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btn_huy);
             this.groupBox3.Controls.Add(this.btn_luu);
             this.groupBox3.Controls.Add(this.btn_sua);
             this.groupBox3.Controls.Add(this.btn_them);
             this.groupBox3.Controls.Add(this.btn_xoa);
-            this.groupBox3.Location = new System.Drawing.Point(1001, 31);
+            this.groupBox3.Location = new System.Drawing.Point(978, 31);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(315, 111);
+            this.groupBox3.Size = new System.Drawing.Size(338, 157);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Hành động";
+            // 
+            // btn_huy
+            // 
+            this.btn_huy.Image = global::Coach_Ticket_Management.Properties.Resources.cancel_24;
+            this.btn_huy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_huy.Location = new System.Drawing.Point(6, 111);
+            this.btn_huy.Name = "btn_huy";
+            this.btn_huy.Size = new System.Drawing.Size(146, 36);
+            this.btn_huy.TabIndex = 24;
+            this.btn_huy.Text = "Hủy";
+            this.btn_huy.UseVisualStyleBackColor = true;
+            this.btn_huy.Click += new System.EventHandler(this.btn_huy_Click);
             // 
             // btn_luu
             // 
@@ -521,11 +556,6 @@
             this.loaiVeBindingSource.DataMember = "LoaiVe";
             this.loaiVeBindingSource.DataSource = this.qLBVXKBindingSource;
             // 
-            // veXeBindingSource
-            // 
-            this.veXeBindingSource.DataMember = "VeXe";
-            this.veXeBindingSource.DataSource = this.qLBVXKBindingSource;
-            // 
             // qLBVXKBindingSource
             // 
             this.qLBVXKBindingSource.DataSource = this.qLBVXK;
@@ -535,6 +565,11 @@
             // 
             this.qLBVXK.DataSetName = "QLBVXK";
             this.qLBVXK.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // veXeBindingSource
+            // 
+            this.veXeBindingSource.DataMember = "VeXe";
+            this.veXeBindingSource.DataSource = this.qLBVXKBindingSource;
             // 
             // loaiVeTableAdapter
             // 
@@ -565,9 +600,9 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.loaiVeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veXeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLBVXKBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLBVXK)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veXeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -626,5 +661,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tb2_mave;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btn_huy;
+        private System.Windows.Forms.ToolStripMenuItem báoCáoToolStripMenuItem;
+        private System.Windows.Forms.Button btn_showall;
     }
 }

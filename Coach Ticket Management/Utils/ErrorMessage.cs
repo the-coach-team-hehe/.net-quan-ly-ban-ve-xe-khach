@@ -19,13 +19,13 @@ namespace Coach_Ticket_Management.Utils
         public static string GetErrorMessage(SqlException exception)
         {
             string exceptionMessage = exception.Message;
+            if (isExist(exceptionMessage, "PRIMARY KEY"))
+                return "Đã tồn tại!";
             if (isExist(exceptionMessage, "TRUNGGHE"))
                 return "Ghế này đã có người đặt!";
             if (isExist(exceptionMessage, "KHONGCONCHO"))
-                return "Ghế này đã có người đặt!";
+                return "Đã hết chỗ trên chuyến!";
             return "Lỗi không xác định";
         }
-
-
     }
 }

@@ -16,5 +16,13 @@ namespace Coach_Ticket_Management.Utils
                 value.Enabled = isEnabled;
             }
         }
+
+        public static void SetText(string text, params Control[] values)
+        {
+            foreach (Control value in values)
+            {
+                value.Text = text;
+            }
+        }
     }
 }

@@ -26,30 +26,19 @@ namespace Coach_Ticket_Management.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=vuthanhduong\\d_db_2012;Initial Catalog=QLBVXK;Persist Security Info=T" +
-            "rue;User ID=sa;Password=09122002")]
-        public string QLBVXKConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Stuff\\Codespace\\.net-quan" +
+            "-ly-ban-ve-xe-khach\\Coach Ticket Management\\DB_QLBVXK_Prim.mdf\";Integrated Secur" +
+            "ity=True;Connect Timeout=30")]
+        public string DB_QLBVXK_PrimConnectionString_Dev {
             get {
-                return ((string)(this["QLBVXKConnectionString"]));
+                return ((string)(this["DB_QLBVXK_PrimConnectionString_Dev"]));
             }
         }
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=VUTHANHDUONG\\D_DB_2012;Initial Catalog=DB_QLBVXK;Integrated Security=" +
-            "True")]
-        public string DB_QLBVXKConnectionString {
-            get {
-                return ((string)(this["DB_QLBVXKConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\DB_QLBVXK_Pri" +
-            "m.mdf;Integrated Security=True;Connect Timeout=30")]
+        [global::System.Configuration.DefaultSettingValueAttribute("x")]
         public string DB_QLBVXK_PrimConnectionString {
             get {
                 return ((string)(this["DB_QLBVXK_PrimConnectionString"]));

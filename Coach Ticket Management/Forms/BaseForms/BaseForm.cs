@@ -20,6 +20,8 @@ namespace Coach_Ticket_Management.Forms.BaseForms
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.Fixed3D;
+            this.CenterToScreen();
+            this.Icon = Properties.Resources.logo1;
         }
     }
 }

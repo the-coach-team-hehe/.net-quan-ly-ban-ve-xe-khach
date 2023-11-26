@@ -1,5 +1,6 @@
 ﻿using Coach_Ticket_Management.Database;
 using Coach_Ticket_Management.Database.QLBVXKTableAdapters;
+using Coach_Ticket_Management.Forms.ActionForms;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -19,12 +20,42 @@ namespace Coach_Ticket_Management.Utils
             return adapter.GetData();
         }
 
-        public static string InsertVeXe()
+        public static QLBVXK.LoaiVeDataTable GetDataTableLoaiVes()
+        {
+            LoaiVeTableAdapter adapter = new LoaiVeTableAdapter();
+            return adapter.GetData();
+        }
+
+        public static QLBVXK.TuyenDataTable GetDataTableTuyens()
+        {
+            TuyenTableAdapter adapter = new TuyenTableAdapter();
+            return adapter.GetData();
+        }
+
+        public static QLBVXK.GheDataTable GetDataTableGhes(int MaChuyenXe)
+        {
+            GheTableAdapter adapter = new GheTableAdapter();
+            return adapter.GetDataByMaChuyenXe(MaChuyenXe);
+        }
+
+        public static QLBVXK.GheDataTable GetDataTableGhesConTrong(int MaChuyenXe)
+        {
+            GheTableAdapter adapter = new GheTableAdapter();
+            return adapter.GetData_ConTrong_ByMaChuyenXe(MaChuyenXe);
+        }
+
+        public static QLBVXK.ThongTinChuyenXeDataTable GetDataTableThongTinChuyenXes()
+        {
+            ThongTinChuyenXeTableAdapter adapter = new ThongTinChuyenXeTableAdapter();
+            return adapter.GetData();
+        }
+
+        public static string InsertVeXe(int MaChuyenXe, int MaLoaiVe, int MaNhanVien, int SoGhe, string TenKhachHang)
         {
             try
             {
                 VeXeTableAdapter adapter = new VeXeTableAdapter();
-                adapter.Insert(1, 1, 1, 1, "Nguyễn Minh Đức", 0);
+                adapter.Insert(MaChuyenXe, MaLoaiVe, MaNhanVien, SoGhe, TenKhachHang, 0);
                 return "Đặt vé thành công!";
             }
             catch (SqlException e)
@@ -33,10 +64,26 @@ namespace Coach_Ticket_Management.Utils
             }
         }
 
-        public static string XoaVeXe()
+        public static string UpdateVeXe(int MaVeXe, int MaChuyenXe, int MaLoaiVe, int MaNhanVien, int SoGhe, string TenKhachHang)
         {
             try
             {
+                VeXeTableAdapter adapter = new VeXeTableAdapter();
+                adapter.AltUpdate(MaChuyenXe, MaLoaiVe, MaNhanVien, TenKhachHang, SoGhe, MaVeXe);
+                return "Cập nhật thành công!";
+            }
+            catch (SqlException e)
+            {
+                return ErrorMessage.GetErrorMessage(e);
+            }
+        }
+
+        public static string XoaVeXe(int MaVeXe)
+        {
+            try
+            {
+                VeXeTableAdapter adapter = new VeXeTableAdapter();
+                adapter.AltDelete(MaVeXe);
                 return "Xóa thành công!";
             }
             catch (SqlException e)
