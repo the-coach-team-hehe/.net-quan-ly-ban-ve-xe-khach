@@ -38,7 +38,9 @@ namespace Coach_Ticket_Management.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("x")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Stuff\\Codespace\\.net-quan" +
+            "-ly-ban-ve-xe-khach\\Coach Ticket Management\\DB_QLBVXK_Prim.mdf\";Integrated Secur" +
+            "ity=True;Connect Timeout=30")]
         public string DB_QLBVXK_PrimConnectionString {
             get {
                 return ((string)(this["DB_QLBVXK_PrimConnectionString"]));

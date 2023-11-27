@@ -50,6 +50,24 @@ namespace Coach_Ticket_Management.Utils
             return adapter.GetData();
         }
 
+        public static QLBVXK.ThongTinNhanVienDataTable GetDataTableThongTinNhanViens()
+        {
+            ThongTinNhanVienTableAdapter adapter = new ThongTinNhanVienTableAdapter();
+            return adapter.GetData();
+        }
+
+        public static QLBVXK.ChucVuDataTable GetDataTableChucVus()
+        {
+            ChucVuTableAdapter adapter = new ChucVuTableAdapter();
+            return adapter.GetData();
+        }
+
+        public static QLBVXK.NhanVienDataTable GetMatKhauNhanVien(int MaNhanVien)
+        {
+            NhanVienTableAdapter adapter = new NhanVienTableAdapter();
+            return adapter.GetMatKhauByMaNhanVien(MaNhanVien);
+        }
+
         public static string InsertVeXe(int MaChuyenXe, int MaLoaiVe, int MaNhanVien, int SoGhe, string TenKhachHang)
         {
             try
@@ -85,6 +103,34 @@ namespace Coach_Ticket_Management.Utils
                 VeXeTableAdapter adapter = new VeXeTableAdapter();
                 adapter.AltDelete(MaVeXe);
                 return "Xóa thành công!";
+            }
+            catch (SqlException e)
+            {
+                return ErrorMessage.GetErrorMessage(e);
+            }
+        }
+
+        public static string InsertNhanVien(int MaChucVu, string TenDangNhap, string MatKhau, string TenNhanVien, string CCCD, string DiaChi, string SoDienThoai)
+        {
+            try
+            {
+                NhanVienTableAdapter adapter = new NhanVienTableAdapter();
+                adapter.Insert(MaChucVu, TenDangNhap, MatKhau, TenNhanVien, CCCD, SoDienThoai, DiaChi);
+                return "Thêm thành công";
+            }
+            catch (SqlException e)
+            {
+                return ErrorMessage.GetErrorMessage(e);
+            }
+        }
+
+        public static string UpdateNhanVien(int MaNhanVien, int MaChucVu, string TenDangNhap, string MatKhau, string TenNhanVien, string CCCD, string DiaChi, string SoDienThoai)
+        {
+            try
+            {
+                NhanVienTableAdapter adapter = new NhanVienTableAdapter();
+                adapter.AltUpdate(MaChucVu, TenDangNhap, MatKhau, TenNhanVien, CCCD, SoDienThoai, DiaChi, MaNhanVien);
+                return "Cập nhật thành công";
             }
             catch (SqlException e)
             {
