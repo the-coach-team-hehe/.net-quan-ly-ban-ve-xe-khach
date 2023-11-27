@@ -854,7 +854,7 @@ where MaVeXe = @MaVeXe</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ThongTinVeXeTableAdapter" GeneratorDataComponentClassName="ThongTinVeXeTableAdapter" Name="ThongTinVeXe" UserDataComponentName="ThongTinVeXeTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DB_QLBVXK_PrimConnectionString_Dev (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
+              <DbSource ConnectionRef="DB_QLBVXK_PrimConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT vx.MaVeXe N'Mã vé', vx.MaChuyenXe N'Mã chuyến', t.TenTuyen N'Tuyến', lv.TenLoaiVe N'Loại vé', nv.TenNhanVien N'Nhân viên bán', vx.SoGhe N'Số ghế', vx.TenKhachHang N'Họ tên', vx.GiaVe N'Giá vé', cx.ThoiGianKhoiHanh N'Ngày khởi hành' FROM dbo.VeXe vx
@@ -886,7 +886,7 @@ where cx.SoGheDaDat &lt; (select x.SoChoNgoi from Xe x where x.MaXe = cx.MaXe)</
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ThongTinNhanVienTableAdapter" GeneratorDataComponentClassName="ThongTinNhanVienTableAdapter" Name="ThongTinNhanVien" UserDataComponentName="ThongTinNhanVienTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DB_QLBVXK_PrimConnectionString_Dev (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
+              <DbSource ConnectionRef="DB_QLBVXK_PrimConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>select nv.MaNhanVien N'Mã nhân viên', cv.TenChucVu N'Chức vụ', nv.TenDangNhap N'Tên đăng nhập', nv.TenNhanVien N'Họ tên nhân viên',

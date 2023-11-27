@@ -29,6 +29,7 @@ namespace Coach_Ticket_Management
             configFile.ConnectionStrings.ConnectionStrings[name].ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" + path + ";Integrated Security=True;Connect Timeout=30";
             configFile.ConnectionStrings.ConnectionStrings[name].ProviderName = "System.Data.SqlClient";
             configFile.Save(ConfigurationSaveMode.Modified);
+
             #endregion DELETE THIS REGION WHEN RELEASH AND CHANGE THE CONNECTION STRING ALSO
 
             Application.EnableVisualStyles();

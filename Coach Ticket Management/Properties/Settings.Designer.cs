@@ -13,7 +13,7 @@ namespace Coach_Ticket_Management.Properties {
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.3.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+    public sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
         
@@ -26,9 +26,8 @@ namespace Coach_Ticket_Management.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Stuff\\Codespace\\.net-quan" +
-            "-ly-ban-ve-xe-khach\\Coach Ticket Management\\DB_QLBVXK_Prim.mdf\";Integrated Secur" +
-            "ity=True;Connect Timeout=30")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=;Integrated Security=True;Con" +
+            "nect Timeout=30")]
         public string DB_QLBVXK_PrimConnectionString_Dev {
             get {
                 return ((string)(this["DB_QLBVXK_PrimConnectionString_Dev"]));
@@ -38,9 +37,8 @@ namespace Coach_Ticket_Management.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Stuff\\Codespace\\.net-quan" +
-            "-ly-ban-ve-xe-khach\\Coach Ticket Management\\DB_QLBVXK_Prim.mdf\";Integrated Secur" +
-            "ity=True;Connect Timeout=30")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=;Integrated Security=True;Con" +
+            "nect Timeout=30")]
         public string DB_QLBVXK_PrimConnectionString {
             get {
                 return ((string)(this["DB_QLBVXK_PrimConnectionString"]));
