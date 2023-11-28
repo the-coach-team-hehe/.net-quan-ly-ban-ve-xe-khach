@@ -415,7 +415,7 @@
             this.Location = new System.Drawing.Point(0, 0);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "QLNhanVien";
-            this.Text = "QUẢN LÝ NHÂN VIÊN";
+            this.Text = "Danh sách";
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

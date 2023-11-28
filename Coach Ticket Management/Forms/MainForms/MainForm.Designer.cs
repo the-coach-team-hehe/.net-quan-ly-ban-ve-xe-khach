@@ -125,6 +125,7 @@
             this.quảnLýChuyếnXeToolStripMenuItem.Name = "quảnLýChuyếnXeToolStripMenuItem";
             this.quảnLýChuyếnXeToolStripMenuItem.Size = new System.Drawing.Size(162, 24);
             this.quảnLýChuyếnXeToolStripMenuItem.Text = "Quản lý chuyến xe";
+            this.quảnLýChuyếnXeToolStripMenuItem.Click += new System.EventHandler(this.quảnLýChuyếnXeToolStripMenuItem_Click);
             // 
             // quảnLýXeToolStripMenuItem
             // 
