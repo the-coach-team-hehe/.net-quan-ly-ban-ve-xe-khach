@@ -18,5 +18,17 @@ namespace Coach_Ticket_Management.Forms.ActionForms
             InitializeComponent();
             this.CenterToScreen();
         }
+
+        private void QLTuyen_Load(object sender, EventArgs e)
+        {
+            dataGridView_thongtintuyenxe.AllowUserToAddRows = false;
+            dataGridView_thongtintuyenxe.AllowUserToDeleteRows = false;
+            dataGridView_thongtintuyenxe.AllowUserToResizeColumns = false;
+            dataGridView_thongtintuyenxe.AllowUserToResizeRows = false;
+            dataGridView_thongtintuyenxe.RowHeadersVisible = false;
+            dataGridView_thongtintuyenxe.EditMode = DataGridViewEditMode.EditProgrammatically;
+            dataGridView_thongtintuyenxe.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView_thongtintuyenxe.BackgroundColor = DefaultBackColor;
+        }
     }
 }
