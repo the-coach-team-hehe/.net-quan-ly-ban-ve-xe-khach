@@ -48,7 +48,7 @@
             this.tb2_machuyenxe = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cb_tuyen = new System.Windows.Forms.ComboBox();
+            this.cbbox_tuyen = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.dtpicker_thoigiankhoihanh = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -255,7 +255,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cb_tuyen);
+            this.groupBox1.Controls.Add(this.cbbox_tuyen);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.dtpicker_thoigiankhoihanh);
             this.groupBox1.Controls.Add(this.label5);
@@ -275,13 +275,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách";
             // 
-            // cb_tuyen
+            // cbbox_tuyen
             // 
-            this.cb_tuyen.FormattingEnabled = true;
-            this.cb_tuyen.Location = new System.Drawing.Point(132, 97);
-            this.cb_tuyen.Name = "cb_tuyen";
-            this.cb_tuyen.Size = new System.Drawing.Size(208, 24);
-            this.cb_tuyen.TabIndex = 20;
+            this.cbbox_tuyen.FormattingEnabled = true;
+            this.cbbox_tuyen.Location = new System.Drawing.Point(132, 97);
+            this.cbbox_tuyen.Name = "cbbox_tuyen";
+            this.cbbox_tuyen.Size = new System.Drawing.Size(208, 24);
+            this.cbbox_tuyen.TabIndex = 20;
             // 
             // label8
             // 
@@ -442,6 +442,6 @@
         private System.Windows.Forms.DateTimePicker dtpicker_thoigiankhoihanh;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tb_tuyen;
-        private System.Windows.Forms.ComboBox cb_tuyen;
+        private System.Windows.Forms.ComboBox cbbox_tuyen;
     }
 }

@@ -252,5 +252,34 @@ namespace Coach_Ticket_Management.Forms.MainForms
             QLChuyen qlChuyenXe = new QLChuyen();
             qlChuyenXe.ShowDialog();
         }
+
+        private void quảnLýXeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QLXe qLXe = new QLXe();
+            qLXe.ShowDialog();
+        }
+
+        private void quảnLýTuyếnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QLTuyen qLTuyen = new QLTuyen();
+            qLTuyen.ShowDialog();
+        }
+
+        private void quảnLýTàiXếToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QLTaiXe qLTaiXe = new QLTaiXe();
+            qLTaiXe.ShowDialog();
+        }
+
+        private void báoCáoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Report report = new Report();
+            report.ShowDialog();
+        }
+
+        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
