@@ -68,3 +68,26 @@ C:\Users\ACER\Documents\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Managem
 C:\Users\ACER\Documents\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.CoreCompileInputs.cache
 C:\Users\ACER\Documents\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.exe
 C:\Users\ACER\Documents\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.pdb
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\DB_QLBVXK_Prim.mdf
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\DB_QLBVXK_Prim_log.ldf
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\Coach Ticket Management.exe.config
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\Coach Ticket Management.exe
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\Coach Ticket Management.pdb
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.AssemblyReference.cache
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Controls.LabelTextBox.resources
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.ActionForms.LoginForm.resources
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.ActionForms.PickChuyen.resources
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.ActionForms.QLChuyen.resources
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.ActionForms.QLNhanVien.resources
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.ActionForms.QLTaiXe.resources
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.ActionForms.QLTuyen.resources
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.ActionForms.QLXe.resources
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.ActionForms.Report.resources
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.BaseForms.BaseForm.resources
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.MainForms.MainForm.resources
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Forms.BaseForms.MessageForm.resources
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach_Ticket_Management.Properties.Resources.resources
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.GenerateResource.cache
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.CoreCompileInputs.cache
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.exe
+C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.pdb
