@@ -18,19 +18,19 @@ namespace Coach_Ticket_Management
         [STAThread]
         static void Main()
         {
-            #region DELETE THIS REGION WHEN RELEASH AND CHANGE THE CONNECTION STRING ALSO
-            string prevpath1 = Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName;
-            string prevpath2 = Directory.GetParent(prevpath1).FullName;
-            string path = Directory.GetParent(prevpath2).FullName + "\\DB_QLBVXK_Prim.mdf";
+            //#region DELETE THIS REGION WHEN RELEASH AND CHANGE THE CONNECTION STRING ALSO
+            //string prevpath1 = Directory.GetParent(Assembly.GetExecutingAssembly().Location).FullName;
+            //string prevpath2 = Directory.GetParent(prevpath1).FullName;
+            //string path = Directory.GetParent(prevpath2).FullName + "\\DB_QLBVXK_Prim.mdf";
 
-            string name = "Coach_Ticket_Management.Properties.Settings.DB_QLBVXK_PrimConnectionString";
+            //string name = "Coach_Ticket_Management.Properties.Settings.DB_QLBVXK_PrimConnectionString";
 
-            var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-            configFile.ConnectionStrings.ConnectionStrings[name].ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" + path + ";Integrated Security=True;Connect Timeout=30";
-            configFile.ConnectionStrings.ConnectionStrings[name].ProviderName = "System.Data.SqlClient";
-            configFile.Save(ConfigurationSaveMode.Modified);
+            //var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            //configFile.ConnectionStrings.ConnectionStrings[name].ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" + path + ";Integrated Security=True;Connect Timeout=30";
+            //configFile.ConnectionStrings.ConnectionStrings[name].ProviderName = "System.Data.SqlClient";
+            //configFile.Save(ConfigurationSaveMode.Modified);
 
-            #endregion DELETE THIS REGION WHEN RELEASH AND CHANGE THE CONNECTION STRING ALSO
+            //#endregion DELETE THIS REGION WHEN RELEASH AND CHANGE THE CONNECTION STRING ALSO
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

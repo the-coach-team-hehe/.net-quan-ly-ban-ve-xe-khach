@@ -97,13 +97,15 @@ namespace Coach_Ticket_Management.Forms.ActionForms
             {
                 try
                 {
-                    // do something
+                    MessageBox.Show(DataAdapterHandler.DeleteNhanVien(Convert.ToInt32(tb2_manhanvien.Text)));
                 }
                 catch
                 {
                     MessageBox.Show("Có lỗi không xác định!");
                 }
             }
+            dt = DataAdapterHandler.GetDataTableThongTinNhanViens();
+            dataGridView_thongtinnhanvien.DataSource = dt;
         }
 
         private void btn_sua_Click(object sender, EventArgs e)

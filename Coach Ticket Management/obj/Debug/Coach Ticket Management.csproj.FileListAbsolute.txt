@@ -91,3 +91,20 @@ C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach 
 C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.CoreCompileInputs.cache
 C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.exe
 C:\Users\Memor\OneDrive\Tài liệu\GitHub\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.pdb
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.Shared.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\stdole.dll
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.CopyComplete

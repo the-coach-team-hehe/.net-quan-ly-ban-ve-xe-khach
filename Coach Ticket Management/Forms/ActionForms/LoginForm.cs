@@ -31,6 +31,8 @@ namespace Coach_Ticket_Management.Forms.ActionForms
             this.MaximizeBox = false;
             this.btn_login.Click += Btn_login_Click;
             this.textb_password.PasswordChar = '*';
+            textb_username.Text = "test01";
+            textb_password.Text = "test01";
         }
 
         private void Btn_login_Click(object sender, EventArgs e)

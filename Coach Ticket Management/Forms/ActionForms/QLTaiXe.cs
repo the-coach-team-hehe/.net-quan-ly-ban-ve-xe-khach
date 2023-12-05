@@ -1,4 +1,5 @@
 ﻿using Coach_Ticket_Management.Forms.BaseForms;
+using Coach_Ticket_Management.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,9 @@ namespace Coach_Ticket_Management.Forms.ActionForms
 {
     public partial class QLTaiXe : BaseForm
     {
+        Button prev;
+        DataTable dt = DataAdapterHandler.GetDataTableTaiXes();
+
         public QLTaiXe()
         {
             InitializeComponent();
@@ -27,8 +31,43 @@ namespace Coach_Ticket_Management.Forms.ActionForms
             dataGridView_thongtintaixe.AllowUserToResizeRows = false;
             dataGridView_thongtintaixe.RowHeadersVisible = false;
             dataGridView_thongtintaixe.EditMode = DataGridViewEditMode.EditProgrammatically;
-            dataGridView_thongtintaixe.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView_thongtintaixe.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView_thongtintaixe.BackgroundColor = DefaultBackColor;
+
+            dataGridView_thongtintaixe.DataSource = dt;
+        }
+
+        private void btn_them_Click(object sender, EventArgs e)
+        {
+            prev = btn_them;
+        }
+
+        private void btn_xoa_Click(object sender, EventArgs e)
+        {
+            prev = btn_xoa;
+        }
+
+        private void btn_sua_Click(object sender, EventArgs e)
+        {
+            prev = btn_sua;
+        }
+
+        private void btn_luu_Click(object sender, EventArgs e)
+        {
+            if (prev == btn_them)
+            {
+
+            }
+            if (prev == btn_sua)
+            {
+
+            }
+            prev = null;
+        }
+
+        private void btn_huy_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

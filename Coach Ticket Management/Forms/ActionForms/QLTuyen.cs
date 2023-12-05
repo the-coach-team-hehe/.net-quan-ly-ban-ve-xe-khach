@@ -1,4 +1,5 @@
 ﻿using Coach_Ticket_Management.Forms.BaseForms;
+using Coach_Ticket_Management.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,9 @@ namespace Coach_Ticket_Management.Forms.ActionForms
 {
     public partial class QLTuyen : BaseForm
     {
+        DataTable dt = DataAdapterHandler.GetDataTableTuyens();
+        Button prev;
+
         public QLTuyen()
         {
             InitializeComponent();
@@ -27,8 +31,10 @@ namespace Coach_Ticket_Management.Forms.ActionForms
             dataGridView_thongtintuyenxe.AllowUserToResizeRows = false;
             dataGridView_thongtintuyenxe.RowHeadersVisible = false;
             dataGridView_thongtintuyenxe.EditMode = DataGridViewEditMode.EditProgrammatically;
-            dataGridView_thongtintuyenxe.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView_thongtintuyenxe.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView_thongtintuyenxe.BackgroundColor = DefaultBackColor;
+
+            dataGridView_thongtintuyenxe.DataSource = dt;
         }
     }
 }

@@ -35,16 +35,16 @@
             this.btn_them = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbbox2_xe = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbbox2_taixe = new System.Windows.Forms.ComboBox();
+            this.dtpicker2_thoigiankhoihanh = new System.Windows.Forms.DateTimePicker();
             this.cbbox2_tuyen = new System.Windows.Forms.ComboBox();
-            this.tb2_hotentaixe = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dtpicker2_thoigiankhoihanh = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.tb_soghedadat = new System.Windows.Forms.TextBox();
+            this.tb2_soghedadat = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.tb_xe = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.tb2_machuyenxe = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -55,8 +55,6 @@
             this.btn_showall = new System.Windows.Forms.Button();
             this.btn_timkiem = new System.Windows.Forms.Button();
             this.tb_hotentaixe = new System.Windows.Forms.TextBox();
-            this.cbbox_xe = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tb_machuyenxe = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -91,6 +89,7 @@
             this.btn_huy.TabIndex = 24;
             this.btn_huy.Text = "Hủy";
             this.btn_huy.UseVisualStyleBackColor = true;
+            this.btn_huy.Click += new System.EventHandler(this.btn_huy_Click);
             // 
             // btn_luu
             // 
@@ -102,6 +101,7 @@
             this.btn_luu.TabIndex = 23;
             this.btn_luu.Text = "Lưu";
             this.btn_luu.UseVisualStyleBackColor = true;
+            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // btn_sua
             // 
@@ -113,6 +113,7 @@
             this.btn_sua.TabIndex = 22;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_them
             // 
@@ -124,6 +125,7 @@
             this.btn_them.TabIndex = 21;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // btn_xoa
             // 
@@ -135,19 +137,20 @@
             this.btn_xoa.TabIndex = 20;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.cbbox2_tuyen);
-            this.groupBox2.Controls.Add(this.tb2_hotentaixe);
-            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.cbbox2_xe);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.cbbox2_taixe);
             this.groupBox2.Controls.Add(this.dtpicker2_thoigiankhoihanh);
+            this.groupBox2.Controls.Add(this.cbbox2_tuyen);
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.tb_soghedadat);
+            this.groupBox2.Controls.Add(this.tb2_soghedadat);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.tb_xe);
-            this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.tb2_machuyenxe);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Location = new System.Drawing.Point(828, 175);
@@ -157,41 +160,59 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin";
             // 
+            // cbbox2_xe
+            // 
+            this.cbbox2_xe.FormattingEnabled = true;
+            this.cbbox2_xe.Location = new System.Drawing.Point(146, 81);
+            this.cbbox2_xe.Name = "cbbox2_xe";
+            this.cbbox2_xe.Size = new System.Drawing.Size(185, 24);
+            this.cbbox2_xe.TabIndex = 37;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(10, 84);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 16);
+            this.label4.TabIndex = 36;
+            this.label4.Text = "Mã xe";
+            // 
+            // cbbox2_taixe
+            // 
+            this.cbbox2_taixe.FormattingEnabled = true;
+            this.cbbox2_taixe.Location = new System.Drawing.Point(147, 108);
+            this.cbbox2_taixe.Name = "cbbox2_taixe";
+            this.cbbox2_taixe.Size = new System.Drawing.Size(185, 24);
+            this.cbbox2_taixe.TabIndex = 35;
+            // 
+            // dtpicker2_thoigiankhoihanh
+            // 
+            this.dtpicker2_thoigiankhoihanh.Location = new System.Drawing.Point(146, 136);
+            this.dtpicker2_thoigiankhoihanh.Name = "dtpicker2_thoigiankhoihanh";
+            this.dtpicker2_thoigiankhoihanh.Size = new System.Drawing.Size(185, 22);
+            this.dtpicker2_thoigiankhoihanh.TabIndex = 34;
+            // 
             // cbbox2_tuyen
             // 
             this.cbbox2_tuyen.FormattingEnabled = true;
-            this.cbbox2_tuyen.Location = new System.Drawing.Point(146, 77);
+            this.cbbox2_tuyen.Location = new System.Drawing.Point(146, 51);
             this.cbbox2_tuyen.Name = "cbbox2_tuyen";
             this.cbbox2_tuyen.Size = new System.Drawing.Size(186, 24);
             this.cbbox2_tuyen.TabIndex = 33;
             // 
-            // tb2_hotentaixe
-            // 
-            this.tb2_hotentaixe.Location = new System.Drawing.Point(146, 107);
-            this.tb2_hotentaixe.Name = "tb2_hotentaixe";
-            this.tb2_hotentaixe.Size = new System.Drawing.Size(186, 22);
-            this.tb2_hotentaixe.TabIndex = 29;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 110);
+            this.label2.Location = new System.Drawing.Point(8, 111);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 28;
             this.label2.Text = "Tài xế";
             // 
-            // dtpicker2_thoigiankhoihanh
-            // 
-            this.dtpicker2_thoigiankhoihanh.Location = new System.Drawing.Point(146, 135);
-            this.dtpicker2_thoigiankhoihanh.Name = "dtpicker2_thoigiankhoihanh";
-            this.dtpicker2_thoigiankhoihanh.Size = new System.Drawing.Size(186, 22);
-            this.dtpicker2_thoigiankhoihanh.TabIndex = 24;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(8, 138);
+            this.label12.Location = new System.Drawing.Point(8, 139);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(123, 16);
             this.label12.TabIndex = 23;
@@ -200,43 +221,27 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(8, 82);
+            this.label10.Location = new System.Drawing.Point(8, 56);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(45, 16);
             this.label10.TabIndex = 8;
             this.label10.Text = "Tuyến";
             // 
-            // tb_soghedadat
+            // tb2_soghedadat
             // 
-            this.tb_soghedadat.Location = new System.Drawing.Point(146, 163);
-            this.tb_soghedadat.Name = "tb_soghedadat";
-            this.tb_soghedadat.Size = new System.Drawing.Size(186, 22);
-            this.tb_soghedadat.TabIndex = 7;
+            this.tb2_soghedadat.Location = new System.Drawing.Point(146, 164);
+            this.tb2_soghedadat.Name = "tb2_soghedadat";
+            this.tb2_soghedadat.Size = new System.Drawing.Size(186, 22);
+            this.tb2_soghedadat.TabIndex = 7;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 166);
+            this.label9.Location = new System.Drawing.Point(8, 167);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(91, 16);
             this.label9.TabIndex = 6;
             this.label9.Text = "Số ghế đã đặt";
-            // 
-            // tb_xe
-            // 
-            this.tb_xe.Location = new System.Drawing.Point(146, 49);
-            this.tb_xe.Name = "tb_xe";
-            this.tb_xe.Size = new System.Drawing.Size(186, 22);
-            this.tb_xe.TabIndex = 3;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 52);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(23, 16);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Xe";
             // 
             // tb2_machuyenxe
             // 
@@ -263,8 +268,6 @@
             this.groupBox1.Controls.Add(this.btn_showall);
             this.groupBox1.Controls.Add(this.btn_timkiem);
             this.groupBox1.Controls.Add(this.tb_hotentaixe);
-            this.groupBox1.Controls.Add(this.cbbox_xe);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.tb_machuyenxe);
             this.groupBox1.Controls.Add(this.label1);
@@ -279,7 +282,7 @@
             // cbbox_tuyen
             // 
             this.cbbox_tuyen.FormattingEnabled = true;
-            this.cbbox_tuyen.Location = new System.Drawing.Point(132, 97);
+            this.cbbox_tuyen.Location = new System.Drawing.Point(132, 63);
             this.cbbox_tuyen.Name = "cbbox_tuyen";
             this.cbbox_tuyen.Size = new System.Drawing.Size(208, 24);
             this.cbbox_tuyen.TabIndex = 20;
@@ -287,7 +290,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 97);
+            this.label8.Location = new System.Drawing.Point(3, 63);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(45, 16);
             this.label8.TabIndex = 19;
@@ -317,6 +320,7 @@
             this.btn_showall.TabIndex = 16;
             this.btn_showall.Text = "Hiển thị tất cả";
             this.btn_showall.UseVisualStyleBackColor = true;
+            this.btn_showall.Click += new System.EventHandler(this.btn_showall_Click);
             // 
             // btn_timkiem
             // 
@@ -326,6 +330,7 @@
             this.btn_timkiem.TabIndex = 15;
             this.btn_timkiem.Text = "Tìm kiếm";
             this.btn_timkiem.UseVisualStyleBackColor = true;
+            this.btn_timkiem.Click += new System.EventHandler(this.btn_timkiem_Click);
             // 
             // tb_hotentaixe
             // 
@@ -333,23 +338,6 @@
             this.tb_hotentaixe.Name = "tb_hotentaixe";
             this.tb_hotentaixe.Size = new System.Drawing.Size(200, 22);
             this.tb_hotentaixe.TabIndex = 12;
-            // 
-            // cbbox_xe
-            // 
-            this.cbbox_xe.FormattingEnabled = true;
-            this.cbbox_xe.Location = new System.Drawing.Point(132, 61);
-            this.cbbox_xe.Name = "cbbox_xe";
-            this.cbbox_xe.Size = new System.Drawing.Size(208, 24);
-            this.cbbox_xe.TabIndex = 11;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 65);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(23, 16);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Xe";
             // 
             // label3
             // 
@@ -385,7 +373,6 @@
             this.dataGridView_thongtinchuyenxe.RowTemplate.Height = 24;
             this.dataGridView_thongtinchuyenxe.Size = new System.Drawing.Size(795, 480);
             this.dataGridView_thongtinchuyenxe.TabIndex = 1;
-            this.dataGridView_thongtinchuyenxe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_thongtinvexe_CellContentClick);
             // 
             // QLChuyen
             // 
@@ -397,7 +384,7 @@
             this.Controls.Add(this.groupBox3);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "QLChuyen";
-            this.Text = "te";
+            this.Text = "QUẢN LÝ CHUYẾN";
             this.Load += new System.EventHandler(this.QLChuyen_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -418,23 +405,17 @@
         private System.Windows.Forms.Button btn_them;
         private System.Windows.Forms.Button btn_xoa;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox tb2_hotentaixe;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox dtpicker2_thoigiankhoihanh;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox tb_soghedadat;
+        private System.Windows.Forms.TextBox tb2_soghedadat;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox tb_xe;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tb2_machuyenxe;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_showall;
         private System.Windows.Forms.Button btn_timkiem;
         private System.Windows.Forms.TextBox tb_hotentaixe;
-        private System.Windows.Forms.ComboBox cbbox_xe;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb_machuyenxe;
         private System.Windows.Forms.Label label1;
@@ -444,5 +425,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbbox_tuyen;
         private System.Windows.Forms.ComboBox cbbox2_tuyen;
+        private System.Windows.Forms.DateTimePicker dtpicker2_thoigiankhoihanh;
+        private System.Windows.Forms.ComboBox cbbox2_taixe;
+        private System.Windows.Forms.ComboBox cbbox2_xe;
+        private System.Windows.Forms.Label label4;
     }
 }

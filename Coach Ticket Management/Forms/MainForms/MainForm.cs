@@ -245,36 +245,48 @@ namespace Coach_Ticket_Management.Forms.MainForms
         {
             QLNhanVien qLNhanVien = new QLNhanVien();
             qLNhanVien.ShowDialog();
+            dt = DataAdapterHandler.GetDataTableVeXes();
+            dataGridView_thongtinvexe.DataSource = dt;
         }
 
         private void quảnLýChuyếnXeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             QLChuyen qlChuyenXe = new QLChuyen();
             qlChuyenXe.ShowDialog();
+            dt = DataAdapterHandler.GetDataTableVeXes();
+            dataGridView_thongtinvexe.DataSource = dt;
         }
 
         private void quảnLýXeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             QLXe qLXe = new QLXe();
             qLXe.ShowDialog();
+            dt = DataAdapterHandler.GetDataTableVeXes();
+            dataGridView_thongtinvexe.DataSource = dt;
         }
 
         private void quảnLýTuyếnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             QLTuyen qLTuyen = new QLTuyen();
             qLTuyen.ShowDialog();
+            dt = DataAdapterHandler.GetDataTableVeXes();
+            dataGridView_thongtinvexe.DataSource = dt;
         }
 
         private void quảnLýTàiXếToolStripMenuItem_Click(object sender, EventArgs e)
         {
             QLTaiXe qLTaiXe = new QLTaiXe();
             qLTaiXe.ShowDialog();
+            dt = DataAdapterHandler.GetDataTableVeXes();
+            dataGridView_thongtinvexe.DataSource = dt;
         }
 
         private void báoCáoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Report report = new Report();
             report.ShowDialog();
+            dt = DataAdapterHandler.GetDataTableVeXes();
+            dataGridView_thongtinvexe.DataSource = dt;
         }
 
         private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)

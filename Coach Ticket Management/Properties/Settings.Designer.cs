@@ -26,19 +26,8 @@ namespace Coach_Ticket_Management.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=;Integrated Security=True;Con" +
-            "nect Timeout=30")]
-        public string DB_QLBVXK_PrimConnectionString_Dev {
-            get {
-                return ((string)(this["DB_QLBVXK_PrimConnectionString_Dev"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=;Integrated Security=True;Con" +
-            "nect Timeout=30")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|DB_QLBVXK_Prim" +
+            ".mdf;Integrated Security=True;Connect Timeout=30")]
         public string DB_QLBVXK_PrimConnectionString {
             get {
                 return ((string)(this["DB_QLBVXK_PrimConnectionString"]));
