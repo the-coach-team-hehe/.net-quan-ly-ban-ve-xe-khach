@@ -52,6 +52,7 @@
             this.tb_mavexe = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_inve = new System.Windows.Forms.Button();
             this.cbbox2_soghe = new System.Windows.Forms.ComboBox();
             this.tb2_tuyen = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -303,6 +304,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btn_inve);
             this.groupBox2.Controls.Add(this.cbbox2_soghe);
             this.groupBox2.Controls.Add(this.tb2_tuyen);
             this.groupBox2.Controls.Add(this.label13);
@@ -328,6 +330,17 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin";
+            // 
+            // btn_inve
+            // 
+            this.btn_inve.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_inve.Location = new System.Drawing.Point(125, 446);
+            this.btn_inve.Name = "btn_inve";
+            this.btn_inve.Size = new System.Drawing.Size(97, 41);
+            this.btn_inve.TabIndex = 28;
+            this.btn_inve.Text = "In vé";
+            this.btn_inve.UseVisualStyleBackColor = true;
+            this.btn_inve.Click += new System.EventHandler(this.btn_inve_Click);
             // 
             // cbbox2_soghe
             // 
@@ -673,5 +686,6 @@
         private System.Windows.Forms.Button btn_huy;
         private System.Windows.Forms.ToolStripMenuItem báoCáoToolStripMenuItem;
         private System.Windows.Forms.Button btn_showall;
+        private System.Windows.Forms.Button btn_inve;
     }
 }

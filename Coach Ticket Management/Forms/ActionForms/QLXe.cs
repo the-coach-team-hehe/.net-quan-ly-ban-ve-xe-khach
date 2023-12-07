@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace Coach_Ticket_Management.Forms.ActionForms
 {
+    // Searching
     public partial class QLXe : BaseForm
     {
         DataTable dt = DataAdapterHandler.GetDataTableThongTinXes();

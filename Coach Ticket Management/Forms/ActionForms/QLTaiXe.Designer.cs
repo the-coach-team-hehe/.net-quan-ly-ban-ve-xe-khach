@@ -36,9 +36,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tb_mataixe = new System.Windows.Forms.TextBox();
             this.dataGridView_thongtintaixe = new System.Windows.Forms.DataGridView();
-            this.tb_diachi = new System.Windows.Forms.TextBox();
+            this.tb2_diachi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tb_cccd = new System.Windows.Forms.TextBox();
+            this.tb2_cccd = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.btn_huy = new System.Windows.Forms.Button();
             this.btn_luu = new System.Windows.Forms.Button();
@@ -48,7 +48,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtpicker_ngaysinh = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
-            this.tb_sodienthoai = new System.Windows.Forms.TextBox();
+            this.tb2_sodienthoai = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tb2_hotentaixe = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -63,7 +63,7 @@
             // 
             // btn_showall
             // 
-            this.btn_showall.Location = new System.Drawing.Point(9, 66);
+            this.btn_showall.Location = new System.Drawing.Point(544, 72);
             this.btn_showall.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_showall.Name = "btn_showall";
             this.btn_showall.Size = new System.Drawing.Size(119, 25);
@@ -73,7 +73,7 @@
             // 
             // btn_timkiem
             // 
-            this.btn_timkiem.Location = new System.Drawing.Point(152, 66);
+            this.btn_timkiem.Location = new System.Drawing.Point(687, 72);
             this.btn_timkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(117, 25);
@@ -144,13 +144,13 @@
             this.dataGridView_thongtintaixe.Size = new System.Drawing.Size(795, 511);
             this.dataGridView_thongtintaixe.TabIndex = 1;
             // 
-            // tb_diachi
+            // tb2_diachi
             // 
-            this.tb_diachi.Location = new System.Drawing.Point(133, 107);
-            this.tb_diachi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tb_diachi.Name = "tb_diachi";
-            this.tb_diachi.Size = new System.Drawing.Size(199, 22);
-            this.tb_diachi.TabIndex = 29;
+            this.tb2_diachi.Location = new System.Drawing.Point(133, 107);
+            this.tb2_diachi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb2_diachi.Name = "tb2_diachi";
+            this.tb2_diachi.Size = new System.Drawing.Size(199, 22);
+            this.tb2_diachi.TabIndex = 29;
             // 
             // label2
             // 
@@ -161,13 +161,13 @@
             this.label2.TabIndex = 28;
             this.label2.Text = "Địa chỉ";
             // 
-            // tb_cccd
+            // tb2_cccd
             // 
-            this.tb_cccd.Location = new System.Drawing.Point(133, 135);
-            this.tb_cccd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tb_cccd.Name = "tb_cccd";
-            this.tb_cccd.Size = new System.Drawing.Size(199, 22);
-            this.tb_cccd.TabIndex = 24;
+            this.tb2_cccd.Location = new System.Drawing.Point(133, 135);
+            this.tb2_cccd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb2_cccd.Name = "tb2_cccd";
+            this.tb2_cccd.Size = new System.Drawing.Size(199, 22);
+            this.tb2_cccd.TabIndex = 24;
             // 
             // label12
             // 
@@ -246,12 +246,12 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dtpicker_ngaysinh);
-            this.groupBox2.Controls.Add(this.tb_diachi);
+            this.groupBox2.Controls.Add(this.tb2_diachi);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.tb_cccd);
+            this.groupBox2.Controls.Add(this.tb2_cccd);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.tb_sodienthoai);
+            this.groupBox2.Controls.Add(this.tb2_sodienthoai);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.tb2_hotentaixe);
             this.groupBox2.Controls.Add(this.label7);
@@ -283,13 +283,13 @@
             this.label10.TabIndex = 8;
             this.label10.Text = "Ngày sinh";
             // 
-            // tb_sodienthoai
+            // tb2_sodienthoai
             // 
-            this.tb_sodienthoai.Location = new System.Drawing.Point(133, 162);
-            this.tb_sodienthoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tb_sodienthoai.Name = "tb_sodienthoai";
-            this.tb_sodienthoai.Size = new System.Drawing.Size(199, 22);
-            this.tb_sodienthoai.TabIndex = 7;
+            this.tb2_sodienthoai.Location = new System.Drawing.Point(133, 162);
+            this.tb2_sodienthoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb2_sodienthoai.Name = "tb2_sodienthoai";
+            this.tb2_sodienthoai.Size = new System.Drawing.Size(199, 22);
+            this.tb2_sodienthoai.TabIndex = 7;
             // 
             // label9
             // 
@@ -383,9 +383,9 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox tb_mataixe;
         private System.Windows.Forms.DataGridView dataGridView_thongtintaixe;
-        private System.Windows.Forms.TextBox tb_diachi;
+        private System.Windows.Forms.TextBox tb2_diachi;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tb_cccd;
+        private System.Windows.Forms.TextBox tb2_cccd;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btn_huy;
         private System.Windows.Forms.Button btn_luu;
@@ -393,7 +393,7 @@
         private System.Windows.Forms.Button btn_them;
         private System.Windows.Forms.Button btn_xoa;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox tb_sodienthoai;
+        private System.Windows.Forms.TextBox tb2_sodienthoai;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tb2_hotentaixe;
         private System.Windows.Forms.Label label7;

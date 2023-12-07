@@ -13,6 +13,7 @@ using System.Windows.Forms;
 
 namespace Coach_Ticket_Management.Forms.ActionForms
 {
+    // Done
     public partial class QLChuyen : BaseForm
     {
         DataTable dt = DataAdapterHandler.GetDataTableThongTinChuyenXes1();

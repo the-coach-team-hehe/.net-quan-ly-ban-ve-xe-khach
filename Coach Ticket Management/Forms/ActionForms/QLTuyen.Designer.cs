@@ -56,6 +56,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tb2_matuyen = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.tb2_tentuyen = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_thongtintuyenxe)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -248,6 +250,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.tb2_tentuyen);
+            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.cbbox2_ddketthuc);
             this.groupBox2.Controls.Add(this.cbbox2_ddkhoihanh);
             this.groupBox2.Controls.Add(this.label2);
@@ -267,7 +271,7 @@
             // cbbox2_ddketthuc
             // 
             this.cbbox2_ddketthuc.FormattingEnabled = true;
-            this.cbbox2_ddketthuc.Location = new System.Drawing.Point(143, 82);
+            this.cbbox2_ddketthuc.Location = new System.Drawing.Point(143, 107);
             this.cbbox2_ddketthuc.Name = "cbbox2_ddketthuc";
             this.cbbox2_ddketthuc.Size = new System.Drawing.Size(186, 24);
             this.cbbox2_ddketthuc.TabIndex = 35;
@@ -275,7 +279,7 @@
             // cbbox2_ddkhoihanh
             // 
             this.cbbox2_ddkhoihanh.FormattingEnabled = true;
-            this.cbbox2_ddkhoihanh.Location = new System.Drawing.Point(143, 52);
+            this.cbbox2_ddkhoihanh.Location = new System.Drawing.Point(143, 77);
             this.cbbox2_ddkhoihanh.Name = "cbbox2_ddkhoihanh";
             this.cbbox2_ddkhoihanh.Size = new System.Drawing.Size(186, 24);
             this.cbbox2_ddkhoihanh.TabIndex = 34;
@@ -283,7 +287,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 55);
+            this.label2.Location = new System.Drawing.Point(6, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 16);
             this.label2.TabIndex = 28;
@@ -292,7 +296,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 84);
+            this.label12.Location = new System.Drawing.Point(6, 109);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(108, 16);
             this.label12.TabIndex = 23;
@@ -300,7 +304,7 @@
             // 
             // tb2_giatuyen
             // 
-            this.tb2_giatuyen.Location = new System.Drawing.Point(143, 112);
+            this.tb2_giatuyen.Location = new System.Drawing.Point(143, 137);
             this.tb2_giatuyen.Name = "tb2_giatuyen";
             this.tb2_giatuyen.Size = new System.Drawing.Size(186, 22);
             this.tb2_giatuyen.TabIndex = 7;
@@ -308,7 +312,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 115);
+            this.label9.Location = new System.Drawing.Point(6, 140);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(63, 16);
             this.label9.TabIndex = 6;
@@ -332,11 +336,27 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 24);
+            this.label6.Location = new System.Drawing.Point(6, 24);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 16);
             this.label6.TabIndex = 0;
             this.label6.Text = "Mã tuyến";
+            // 
+            // tb2_tentuyen
+            // 
+            this.tb2_tentuyen.Location = new System.Drawing.Point(143, 49);
+            this.tb2_tentuyen.Name = "tb2_tentuyen";
+            this.tb2_tentuyen.Size = new System.Drawing.Size(186, 22);
+            this.tb2_tentuyen.TabIndex = 37;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 52);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 16);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Tên tuyến";
             // 
             // QLTuyen
             // 
@@ -390,5 +410,7 @@
         private System.Windows.Forms.ComboBox cbbox_tuyen;
         private System.Windows.Forms.ComboBox cbbox2_ddketthuc;
         private System.Windows.Forms.ComboBox cbbox2_ddkhoihanh;
+        private System.Windows.Forms.TextBox tb2_tentuyen;
+        private System.Windows.Forms.Label label5;
     }
 }

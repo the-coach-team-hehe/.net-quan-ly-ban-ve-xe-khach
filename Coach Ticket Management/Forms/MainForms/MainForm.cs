@@ -64,7 +64,7 @@ namespace Coach_Ticket_Management.Forms.MainForms
                 cbbox2_soghe.DataSource = DataAdapterHandler.GetDataTableGhesConTrong(Convert.ToInt32(tb2_machuyen.Text));
                 cbbox2_soghe.DisplayMember = "SoGhe";
                 cbbox2_soghe.Text = dataGridView_thongtinvexe.CurrentRow.Cells[5].Value.ToString();
-                ControlHandler.SetEnabled(true, btn_sua, btn_xoa);
+                ControlHandler.SetEnabled(true, btn_sua, btn_xoa, btn_inve);
             }
         }
 
@@ -79,7 +79,7 @@ namespace Coach_Ticket_Management.Forms.MainForms
         {
             ControlHandler.SetEnabled(false, tb2_mave, tb2_machuyen, tb2_giave, tb2_ngaykhoihanh,
                 tb2_nhanvienbanve, tb2_tuyen, tb2_tenkhachhang, btn_toPickChuyen, cbbox2_loaive,
-                cbbox2_soghe, btn_sua, btn_xoa, btn_luu, btn_huy);
+                cbbox2_soghe, btn_sua, btn_xoa, btn_luu, btn_huy, btn_inve);
         }
 
         private void btn_them_Click(object sender, EventArgs e)
@@ -240,6 +240,22 @@ namespace Coach_Ticket_Management.Forms.MainForms
             ControlHandler.SetEnabled(true, btn_them, btn_xoa, dataGridView_thongtinvexe);
             previousActionButton = null;
         }
+        private void btn_inve_Click(object sender, EventArgs e)
+        {
+            string MaVe = tb2_mave.Text;
+            string MaChuyen = tb2_machuyen.Text;
+            string Tuyen = tb2_tuyen.Text;
+            string LoaiVe = cbbox2_loaive.Text;
+            string TenKhachHang = tb2_tenkhachhang.Text;
+            string GiaVe = tb2_giave.Text;
+            string NgayKhoiHanh = tb2_ngaykhoihanh.Text;
+            string SoGhe = cbbox2_soghe.Text;
+            string NhanVienBan = tb2_nhanvienbanve.Text;
+            Report report = new Report(MaVe, MaChuyen, Tuyen, LoaiVe, SoGhe, TenKhachHang, GiaVe, NgayKhoiHanh, NhanVienBan);
+            report.ShowDialog();
+            dt = DataAdapterHandler.GetDataTableVeXes();
+            dataGridView_thongtinvexe.DataSource = dt;
+        }
 
         private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -283,10 +299,7 @@ namespace Coach_Ticket_Management.Forms.MainForms
 
         private void báoCáoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Report report = new Report();
-            report.ShowDialog();
-            dt = DataAdapterHandler.GetDataTableVeXes();
-            dataGridView_thongtinvexe.DataSource = dt;
+
         }
 
         private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)

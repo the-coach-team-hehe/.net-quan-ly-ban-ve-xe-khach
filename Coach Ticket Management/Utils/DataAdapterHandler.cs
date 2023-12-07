@@ -93,6 +93,24 @@ namespace Coach_Ticket_Management.Utils
             return adapter.GetData();
         }
 
+        public static QLBVXK.ThongTinTuyenDataTable GetDataTableThongTinTuyens()
+        {
+            ThongTinTuyenTableAdapter adapter = new ThongTinTuyenTableAdapter();
+            return adapter.GetData();
+        }
+
+        public static QLBVXK.DiaDiemDataTable GetDataTableDiaDiems()
+        {
+            DiaDiemTableAdapter adapter = new DiaDiemTableAdapter();
+            return adapter.GetData();
+        }
+
+        public static QLBVXK.ThongTinTaiXeDataTable GetDataTableThongTinTaiXes()
+        {
+            ThongTinTaiXeTableAdapter adpater = new ThongTinTaiXeTableAdapter();
+            return adpater.GetData();
+        }
+
         public static string InsertVeXe(int MaChuyenXe, int MaLoaiVe, int MaNhanVien, int SoGhe, string TenKhachHang)
         {
             try
@@ -263,11 +281,13 @@ namespace Coach_Ticket_Management.Utils
             }
         }
 
-        public static string InsertTaiXe()
+        public static string InsertTaiXe(string TenTaiXe, DateTime NgaySinh, string SoDienThoai, string CCCD, string DiaChi)
         {
             try
             {
-                return "";
+                TaiXeTableAdapter adapter = new TaiXeTableAdapter();
+                adapter.Insert(TenTaiXe, NgaySinh, SoDienThoai, CCCD, DiaChi);
+                return "Thêm thành công!";
             }
             catch (SqlException e)
             {
@@ -275,11 +295,13 @@ namespace Coach_Ticket_Management.Utils
             }
         }
 
-        public static string UpdateTaiXe()
+        public static string UpdateTaiXe(string TenTaiXe, DateTime NgaySinh, string SoDienThoai, string CCCD, string DiaChi, int MaTaiXe)
         {
             try
             {
-                return "";
+                TaiXeTableAdapter adapter = new TaiXeTableAdapter();
+                adapter.UpdateQuery(TenTaiXe, NgaySinh.Year + "-" + NgaySinh.Month + "-" + NgaySinh.Day, SoDienThoai, CCCD, DiaChi, MaTaiXe);
+                return "Cập nhật thành công!";
             }
             catch (SqlException e)
             {
@@ -287,11 +309,15 @@ namespace Coach_Ticket_Management.Utils
             }
         }
 
-        public static string DeleteTaiXe()
+        public static string DeleteTaiXe(int MaTaiXe)
         {
             try
             {
-                return "";
+                ChuyenXeTableAdapter adapter0 = new ChuyenXeTableAdapter();
+                adapter0.UpdateNULLByMaTaiXe(MaTaiXe);
+                TaiXeTableAdapter adapter = new TaiXeTableAdapter();
+                adapter.DeleteQuery(MaTaiXe);
+                return "Xóa thành công";
             }
             catch (SqlException e)
             {
@@ -299,11 +325,13 @@ namespace Coach_Ticket_Management.Utils
             }
         }
 
-        public static string InsertTuyen()
+        public static string InsertTuyen(string TenTuyen, int MaDDKhoiHanh, int MaDDKetThuc, decimal GiaTuyen)
         {
             try
             {
-                return "";
+                TuyenTableAdapter adapter = new TuyenTableAdapter();
+                adapter.Insert(TenTuyen, MaDDKhoiHanh, MaDDKetThuc, GiaTuyen);
+                return "Thêm thành công!";
             }
             catch (SqlException e)
             {
@@ -311,11 +339,13 @@ namespace Coach_Ticket_Management.Utils
             }
         }
 
-        public static string UpdateTuyen()
+        public static string UpdateTuyen(string TenTuyen, int MaDDKhoiHanh, int MaDDKetThuc, decimal GiaTuyen, int MaTuyen)
         {
             try
             {
-                return "";
+                TuyenTableAdapter adapter = new TuyenTableAdapter();
+                adapter.UpdateQuery(TenTuyen, MaDDKhoiHanh, MaDDKetThuc, GiaTuyen, MaTuyen);
+                return "Cập nhật thành công!";
             }
             catch (SqlException e)
             {
@@ -323,15 +353,19 @@ namespace Coach_Ticket_Management.Utils
             }
         }
 
-        public static string DeleteTuyen()
+        public static string DeleteTuyen(int MaTuyen)
         {
             try
             {
-                return "";
+                ChuyenXeTableAdapter adapter0 = new ChuyenXeTableAdapter();
+                adapter0.UpdateNULLByMaTuyen(MaTuyen);
+                TuyenTableAdapter adapter = new TuyenTableAdapter();
+                adapter.DeleteQuery(MaTuyen);
+                return "Xóa thành công!";
             }
             catch (SqlException e)
             {
-                return ErrorMessage.GetErrorMessage(e);
+                return "Có các chuyến xe đang chạy tuyến này! Không thể xóa!\n" + ErrorMessage.GetErrorMessage(e);
             }
         }
     }

@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace Coach_Ticket_Management.Forms.ActionForms
 {
+    // Done
     public partial class PickChuyen : BaseForm
     {
         string _maChuyen = string.Empty;
@@ -47,10 +48,17 @@ namespace Coach_Ticket_Management.Forms.ActionForms
 
             cbbox_tuyen.DataSource = DataAdapterHandler.GetDataTableTuyens();
             cbbox_tuyen.DisplayMember = "TenTuyen";
+            try
+            {
+                _maChuyen = dataGridView_thongtinchuyen.CurrentRow.Cells[0].Value.ToString();
+                _tenTuyen = dataGridView_thongtinchuyen.CurrentRow.Cells[1].Value.ToString();
+                _thoiGianKhoiHanh = dataGridView_thongtinchuyen.CurrentRow.Cells[3].Value.ToString();
+            }
+            catch
+            {
 
-            _maChuyen = dataGridView_thongtinchuyen.CurrentRow.Cells[0].Value.ToString();
-            _tenTuyen = dataGridView_thongtinchuyen.CurrentRow.Cells[1].Value.ToString();
-            _thoiGianKhoiHanh = dataGridView_thongtinchuyen.CurrentRow.Cells[3].Value.ToString();
+            }
+            
         }
 
         private void DataGridView_thongtinchuyen_CellClick(object sender, DataGridViewCellEventArgs e)

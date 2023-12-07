@@ -108,3 +108,4 @@ C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debu
 C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\stdole.dll
 C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\obj\Debug\Coach Ticket Management.csproj.CopyComplete
+C:\Stuff\Codespace\.net-quan-ly-ban-ve-xe-khach\Coach Ticket Management\bin\Debug\CrystalDecisions.Windows.Forms.dll
